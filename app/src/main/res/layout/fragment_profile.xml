@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment">
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -16,42 +16,51 @@
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:background="@color/yellow"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageEllipse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/ellipse"
             android:src="@drawable/ellipse_2"
-            android:contentDescription="@string/ellipse" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imagePhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/photo"
             android:src="@drawable/ellipse_45"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="88dp"
-            android:contentDescription="@string/photo"/>
+            android:layout_marginTop="86dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/exit"
+            android:layout_margin="14dp"
             android:src="@drawable/exit"
-            android:layout_marginStart="350dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/exit" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_email"
             android:fontFamily="@font/regular"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:layout_marginStart="125dp"
-            android:layout_marginTop="200dp"/>
-    </FrameLayout>
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePhoto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

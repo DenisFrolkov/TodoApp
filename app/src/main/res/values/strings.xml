@@ -22,4 +22,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_history">No history</string>
     <string name="task_list">Task List</string>
+    <string name="lets_get">Let’s get things done on time</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus praesent purus tincidunt ut cursus vitae. Nisl, vitae nulla lectus tortor, est a aliquam. Pretium netus</string>
+    <string name="indicators">indicators</string>
+    <string name="images_splash">images splash one</string>
 </resources>

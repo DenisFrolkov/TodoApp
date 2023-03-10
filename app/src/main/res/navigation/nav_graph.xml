@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashPagerFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.todoapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profile_graph"
+            app:destination="@id/profile_graph"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.todoapp.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_profile_graph"
+            app:destination="@id/profile_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashPagerFragment"
+        android:name="com.example.todoapp.SplashPagerFragment"
+        android:label="SplashPagerFragment" >
+        <action
+            android:id="@+id/action_splashPagerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashPagerFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <include app:graph="@navigation/profile_graph" />
+    <include app:graph="@navigation/history_graph" />
+    <include app:graph="@navigation/task_graph" />
+</navigation>

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-<group>
-    <item android:id="@+id/fragmentTasks"
-        android:title=""
-        android:icon="@drawable/ic_baseline_task_24"/>
-    <item android:id="@+id/fragmentProfile"
-        android:title=""
-        android:clickable="false"
-        android:contextClickable="false"
-        android:icon="@drawable/ic_baseline_home_24"/>
-    <item android:id="@+id/fragmentHistory"
-        android:title=""
-        android:icon="@drawable/ic_baseline_history_24"/>
-</group>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/task_graph"
+            android:title=""
+            android:icon="@drawable/ic_baseline_task_24"/>
+        <item android:id="@+id/profile_graph"
+            android:title=""
+            android:icon="@drawable/ic_baseline_home_24"/>
+        <item android:id="@+id/history_graph"
+            android:title=""
+            android:icon="@drawable/ic_baseline_history_24"/>
+    </group>
 </menu>

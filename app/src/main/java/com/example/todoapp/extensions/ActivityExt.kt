@@ -1,13 +1,13 @@
 package com.example.todoapp.extensions
 
-import android.app.Activity
 import android.text.Editable
+import androidx.fragment.app.Fragment
 
-fun Activity.validateName(text: Editable?): String? {
+fun Fragment.validateName(text: Editable?): String? {
     return if (text.toString().isNotEmpty()) null else "Поле не должно быть пустым"
 }
 
-fun Activity.validateEmail(text: Editable?): String? {
+fun Fragment.validateEmail(text: Editable?): String? {
 
     return if(text?.isNotEmpty()!!)
     {
@@ -23,7 +23,7 @@ fun Activity.validateEmail(text: Editable?): String? {
 
 }
 
-fun Activity.validatePass(text: Editable?): String? {
+fun Fragment.validatePass(text: Editable?): String? {
 
     return if(text?.isNotEmpty()!!)
     {
@@ -38,7 +38,7 @@ fun Activity.validatePass(text: Editable?): String? {
     }
 }
 
-fun Activity.validateConf(text: Editable?): String? {
+fun Fragment.validateConf(text: Editable?): String? {
     return if(text?.isNotEmpty()!!)
     {
         if(text.length >= 8) {
